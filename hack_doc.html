@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Тайтл</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body id = 'b'>
+        <div class="col-lg-11 mx-auto p-3 py-md-3">
+        <nav class="navbar sticky-top navbar-light bg-light">
+        <div class="container-fluid">
+        
+        <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" width='120%'>Главная</button>
+        <h1 id='nav-1'>Графики</h1>
+		<a href = 'https://kvant43.ru'/><img src="kvant.svg" alt="" width="80" height="80"></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h3 id="offcanvasRightLabel">Панель навигации</h3>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="d-grid gap-2">
+            	<a class ='btn btn-outline-dark'href = '#' onclick = "document.getElementById('page02').style.display='none'; document.getElementById('page03').style.display='none'; document.getElementById('page01').style.display='block'; document.getElementById('nav-2').style.display='none'; document.getElementById('nav-3').style.display='none'; document.getElementById('nav-1').style.display='block'; document.getElementById('b').style.overflow = 'hidden'; document.getElementById('b').style.padding-right = '0px';">Первая страница</a>
+            	<a class ='btn btn-outline-dark' href = '#' onclick = "document.getElementById('page03').style.display='none'; document.getElementById('page01').style.display='none'; document.getElementById('page02').style.display='block';">Вторая страница</a>
+            	<a class ='btn btn-outline-dark' href = '#' onclick = "document.getElementById('page02').style.display='none'; document.getElementById('page01').style.display='none'; document.getElementById('page03').style.display='block';">Третья страница</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+	<div id = 'page01'>
+		<h1>Первая страница</h1>
+		Содержание 1<br>
+		<img src="grafik.png">
+		<!-- <a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page02').style.display='block';">Вперед</a> -->
+		</div>
+		<div id = 'page02' style='display: none'>
+		<h1>Вторая страница</h1>
+		Содержание 2<br>
+		<img src="grafik2.png">
+		</div>
+		<div id = 'page03' style='display: none'>
+		<h1>Третья страница</h1>
+		Содержание 3<br>
+		<img src="grafik3.png">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	</div>
+	<div>
+		<button class='btn btn-outline-dark'>Сделать запись</button> <!-- написать функцию -->
+	</div>
+</div>
+<div class="dropdown">
+	<button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Выбрать переод времени
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+</div>
+</body>
+</html>
